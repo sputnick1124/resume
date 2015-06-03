@@ -1,0 +1,28 @@
+\documentclass{article}
+
+\begin{document}
+	This research, in the field of structural control systems, was funded by the National Science
+	Foundation through the Research Experience for Undergraduate (REU) students. The
+	objective of this project was to combine the robustness of fuzzy logic control with the
+	adaptability of genetic algorithms to produce a self-optimizing oscillation damping control
+	mechanism. Once an initial fuzzy inference system (FIS) is developed by an expert for a
+	given dynamic system, the genetic algorithm will be able to optimize the FIS for a range
+	of similar systems with varying parameters. In order to evaluate the control mechanisms
+	developed during this project, a simulation of a two cart spring-mass system was developed
+	in MATLAB. The performance of the controllers was determined by how quickly it could
+	approach a wall and how close it was able to settle the car system to the wall without
+	crashing. The membership functions of the FIS were reduced to an array of real-valued
+	parameters in order to be used in a genetic algorithm. Once the genetic representation of
+	the FIS was defined, the selection, reproduction, and mutation methods were developed
+	to complete the genetic algorithm. The best solution developed by the genetic algorithm
+	was evaluated against the hand-tuned solution developed in the first phase of the project.
+	In order to simulate varying parameters between similar dynamic systems, the mass of the
+	car system in the simulation was varied from 3kg to 20kg. For each weight change the
+	genetic algorithm was allowed to re-optimize the parameters of the FIS. The performance
+	of the genetic algorithm, with respect to the theoretical best, varied up to 3\%, while the
+	unmodified FIS varied up to 300\%. These results show that genetic algorithms are necessary
+	to allow fuzzy control mechanisms to adapt to different systems with little external input
+	from a general user.
+	
+	I performed vital tasks to the project including writing the computer model of the system, outlining and deploying the genetic algorithm which tuned the fuzzy inference system, and processing and analyzing the results of the experiment. 
+\end{document}

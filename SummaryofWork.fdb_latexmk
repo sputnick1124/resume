@@ -1,0 +1,16 @@
+# Fdb version 3
+["pdflatex"] 1424130003 "SummaryofWork.tex" "SummaryofWork.pdf" "SummaryofWork" 1424130004
+  "/etc/texmf/web2c/texmf.cnf" 1415744505 475 c0e671620eb5563b2130f56340a5fde8 ""
+  "/home/nick/.texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1422152149 1629936 6da974b24ca91f06cd3bcb3ae45d1377 ""
+  "/home/nick/texmf/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
+  "/home/nick/texmf/tex/latex/base/article.cls" 1415144112 20496 25b54d5a19c40eb011a68431975d83fe ""
+  "/home/nick/texmf/tex/latex/base/size10.clo" 1415144112 8967 2708205432f6a3ece9206e1f8d1214fb ""
+  "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1406646078 31088 8e088e958dd0258cc5414842768a3a00 ""
+  "/usr/share/texmf/web2c/texmf.cnf" 1406646078 31088 8e088e958dd0258cc5414842768a3a00 ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1415744516 722773 7addca78e8f5eee4d9d3c7f7e6f9127c ""
+  "SummaryofWork.aux" 1424130004 8 a94a2480d3289e625eea47cd1b285758 ""
+  "SummaryofWork.tex" 1424130003 2201 7b15e04484d3cb8cdcc73295e24e4198 ""
+  (generated)
+  "SummaryofWork.aux"
+  "SummaryofWork.pdf"
+  "SummaryofWork.log"

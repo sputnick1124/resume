@@ -1,0 +1,21 @@
+# Fdb version 3
+["pdflatex"] 1429311689 "bio05_April_15.tex" "bio05_April_15.pdf" "bio05_April_15" 1429311690
+  "/etc/texmf/web2c/texmf.cnf" 1415744505 475 c0e671620eb5563b2130f56340a5fde8 ""
+  "/home/nick/.texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1422152149 1629936 6da974b24ca91f06cd3bcb3ae45d1377 ""
+  "/home/nick/texmf/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
+  "/home/nick/texmf/tex/generic/ifxetex/ifxetex.sty" 1284331290 1458 43ab4710dc82f3edeabecd0d099626b2 ""
+  "/home/nick/texmf/tex/generic/oberdiek/ifpdf.sty" 1303254447 7140 ece2cc23d9f20e1f53975ac167f42d3e ""
+  "/home/nick/texmf/tex/generic/oberdiek/ifvtex.sty" 1335995445 6797 68c89f65e01894df882dd523d3fc0a8f ""
+  "/home/nick/texmf/tex/latex/base/article.cls" 1415144112 20496 25b54d5a19c40eb011a68431975d83fe ""
+  "/home/nick/texmf/tex/latex/base/size10.clo" 1415144112 8967 2708205432f6a3ece9206e1f8d1214fb ""
+  "/home/nick/texmf/tex/latex/geometry/geometry.sty" 1284422013 40502 e003406220954b0716679d7928aedd8a ""
+  "/home/nick/texmf/tex/latex/graphics/keyval.sty" 1415923035 2317 f0bb266f9d8a4fb51671d02627254c73 ""
+  "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1406646078 31088 8e088e958dd0258cc5414842768a3a00 ""
+  "/usr/share/texmf/web2c/texmf.cnf" 1406646078 31088 8e088e958dd0258cc5414842768a3a00 ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1415744516 722773 7addca78e8f5eee4d9d3c7f7e6f9127c ""
+  "bio05_April_15.aux" 1429311690 8 a94a2480d3289e625eea47cd1b285758 ""
+  "bio05_April_15.tex" 1429311689 5232 fc0b8cef38229891d422494544096009 ""
+  (generated)
+  "bio05_April_15.pdf"
+  "bio05_April_15.aux"
+  "bio05_April_15.log"
