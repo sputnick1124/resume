@@ -1,103 +1,344 @@
-\documentclass[letterpaper,10pt]{resume}
+\documentclass[letterpaper]{deedy-resume} 
+\usepackage{textcase}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{fontawesome}
 \usepackage{paralist}
-\definecolor{ruleendcolor}{rgb}{0.8,0.8,0.8}
-
-\author{Nicklas O. Stockton}
-\email{nick.stockton@outlook.com}
-\streetaddress{5274 Brasher Ave.}
-\citystatezip{Blue Ash, OH, 45242}
-\phone{(719)648-3545}
-
-
+\definecolor{linkcolour}{rgb}{0.25,0.25,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
 \begin{document}
-\maketitle
-\section{Education}
-\affiliation[Bachelor of Science \textendash\ Aerospace Engineering, Dean's List]
-			[Cincinnati, OH]
-			{University of Cincinnati}
-			{2013\textendash Present}
 
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+
+\namesection{Nicklas}{Stockton}{ 
+  \color{subheadings}  \href{mailto:nicklas.stockton@gmail.com}{nicklas.stockton@gmail.com} |
+  \color{subheadings}\small 719.648.3545%| \href{https://www.linkedin.com/in/nickstockton/}{https://www.linkedin.com/in/nickstockton}
+}
+
+%----------------------------------------------------------------------------------------
+%	LEFT COLUMN
+%----------------------------------------------------------------------------------------
+\begin{minipage}[t]{0.3\textwidth}% The left column takes up 30% of the text width of the page
+
+%------------------------------------------------
+% Contact & Profiles
+%------------------------------------------------
+
+
+\section{Contact \& Profiles} 
+\vspace{1em}
+\runsubsection{Address}\\
+5274 Brasher Avenue\\Blue Ash, Ohio\\45242\\\\\\
+%\vspace{1em}
+\location{\includegraphics[scale=0.06]{media/linkedin.png} \hspace{0.7ex}|
+    \href{http://in.linkedin.com/in/nickstockton}{nickstockton} \\
+  %\hspace{3ex}
+  \includegraphics[scale=0.05]{media/github.png} \hspace{0.5ex}|
+  \hspace{0.4ex}\href{https://github.com/sputnick1124/}{sputnick1124}}
+\sectionspace % Some whitespace after the section
+\vspace{-1ex}
+\rule{5cm}{0.5pt}
+\vspace{2em}
+
+%------------------------------------------------
+% Skills
+%------------------------------------------------
+
+\section{Programming Skills}
+
+\vspace{1em}
+
+\location{Expert:}
+\textbullet{} Python \\
+\textbullet{} \LaTeX \\
+\textbullet{} Matlab \\
+\location{Proficient:}
+\textbullet{} C/C++ \\
+\textbullet{} Bash \\
+\location{Novice:}
+\textbullet{} Rust\\
+
+%\location{Familiar:}
+%Java \textbullet{} JavaScript \textbullet{} Android\\
+\sectionspace % Some whitespace after the section
+\vspace{-1ex}
+\rule{5cm}{0.5pt}
+\vspace{2em}
+
+\section{Technologies}
+
+\vspace{1em}
+
+Linux/FreeBSD \textbullet{} Unix coreutils\\
+OpenSSH \textbullet{} Gnuplot \textbullet{} Vim\\
+Git\\
+\sectionspace
+\vspace{-1.5ex}
+\rule{5cm}{0.5pt}
+\vspace{2em}
+
+
+\section{Interests}
+
+\vspace{1em}
+
+\location{Machine learning}
+\textbullet{} Pandas\\
+\textbullet{} scikit-learn\\
+\textbullet{} PyTorch\\
+\vspace{1ex}
+\location{Robotics}
+\textbullet{} Robot Operating System \\
+\textbullet{} Gazebo Simulator\\
+\vspace{1ex}
+\location{Computer Vision}
+\textbullet{} OpenCV\\
+\sectionspace
+\vspace{-1ex}
+\rule{5cm}{0.5pt}
+\vspace{2em}
+
+\section{Certifications}
+
+\vspace{1em}
+
+\textbullet{} Defense Acquisition University \textemdash\ Science and Technology Manager Level I\\
+\textbullet{} DOD Secret Security Clearance
+\sectionspace
+\vspace{-1ex}
+\rule{5cm}{0.5pt}
+
+%----------------------------------------------------------------------------------------
+\end{minipage} % The end of the left column
+\hfill
+\vrule
+\hspace{3ex}
+%
+%----------------------------------------------------------------------------------------
+%	RIGHT COLUMN
+%----------------------------------------------------------------------------------------
+%
+\begin{minipage}[t]{0.66\textwidth} % The right column takes up 66% of the text width of the page
+
+%------------------------------------------------
+% Experience
+%------------------------------------------------
+	\section{Professional Experience}
+	\runsubsection{Aerospace Engineer \textendash\ Secret Security Clearance}
+	\descript{\\Air Force Research Laboratory \hfill WPAFB, OH}
+	\location{2017\textendash Present}
+	%{}
 	\begin{compactitem}
-	\item GPA: 3.87 overall, 3.90 in Aerospace Engineering
-	\item Expected graduation: Spring 2017
+		\item Received Scientific and Technical Achievement Team Award \textemdash\ F-16 Auto-Strafe ``Death
+            Claw''
+        \item Learned and modified legacy graphics library to produce custom simulated aircraft HUD symbols
+            within three weeks
+        %\item Quickly implemented required changes to legacy library to modify simulated aircraft HUD for
+            %human operators
+		\item Refactored simulation code base into separate modules, enabling both real-time simulation in full
+            simulator as well as constructive standalone simulation
+		%\item Succesfully refactored simulation code base for increased modularity, portability, and
+            %maintainability enabling simulation to run in a variety of environments
+        \item Introduced distributed version control (Git) to track changes to and manage deployment of code
+            base across isolated network boundaries
+        \item Manually translated Simulink models into C++, validating correctness of code against original
+            models
 	\end{compactitem}
-	\subsection{Extracurricular}
-	\affiliation[Undergraduate Research]
-				{National Science Foundation}
-				{2013}
-		\begin{compactitem}
-		\item Devised unique solution for optimal active control of dynamic system.
-		\item Presented findings to jury of peers in bi-weekly progress meetings.
-		\end{compactitem}
-				
-	\affiliation[Unmanned Air Vehicle Competition Team Member]
-				{Air Force Research Lab Unmanned Air Systems Conference}
-				{2014}
-		\begin{compactitem}
-		\item Developed software to integrate various hardware components to ease the exchange of sensor data. 
-		\end{compactitem}
-				
+    \vspace{3em}
+
+    \runsubsection{Research Assistant}
+    \descript{\\UAV MASTER Labs \hfill Cincinnati, OH}
+    \location{2015\textendash 2017}
+    \begin{compactitem}
+        \item Introduced real-time simulation capabilities to the lab using ROS and Gazebo softwares, thus
+            enabling quick develop-simulate-fly cycles
+        \item Developed unmanned system platform for mobile autonomous landing operation using a
+            genetically-tuned fuzzy logic controller
+%			\subitem Using a genetically-tuned fuzzy controller to control actuation.
+        \item Developed self-navigation autonomous quadcopter for tunnel exploration using 2-D lidar sensor
+            and API to third party contractor code
+%			\subitem Self-localized using a 2-D lidar sensor.
+%			\subitem Self-navigating using API to third party contractor code.
+        \item Integrated camera motion capture system with flight controllers for indoor autonomous flight
+            using ROS
+    \end{compactitem}
+    \vspace{3em}
+    
+    \runsubsection{Research Engineer}
+    \descript{\\Engineering and Scientific Innovations, Inc. \hfill Cincinnati, OH}
+    \location{2014\textendash 2015}
+    \begin{compactitem}
+%		\item Overhauled proprietary fire suppressant delivery system resulting in a 70\% efficiency gain.
+        \item Improved response time by 70\% of rapid fire suppression system by simplifying and optimizing
+            computer vision routines with OpenCV
+%			\subitem Simplified computer vision technique.
+%			\subitem Implemented novel image queuing method.
+%			\subitem Designed and fabricated custom circuit board for interfacing with a single board computer
+%		\item Proposed and assisted in the implementation for a new method of flow introduction of powdered agent. 
+%		\item Performed high\textendash speed cavity analysis of hydrodynamic ram events using custom code.
+        \item Wrote custom utility using OpenCV to analyze cavity dynamics of hydrodynamic ram events
+        \item Created custom programs to perform image velocimetry and droplet sizing on particle clouds
+%			\subitem Bullet hole analysis
+%			\subitem Particle image velocimetry
+    \end{compactitem}
+
+%\section{Education}
+
+%\runsubsection{B.Tech | Computer Science}
+%\descript{| Indian Institute of Technology, Kanpur}
+
+%\location{Expected July 2013 – Aug 2017 | GPA : 9.7/10.0 (Overall)}
+%%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+%\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+
+%\runsubsection{HSC | Class 12}
+%\descript{| Shivaji Science College, Nagpur}
+%\location{May 2013 |  Aggregate : 90.16\%}
+%\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+
+%\runsubsection{AISSCE | Class 10}
+%\descript{| Modern School, Nagpur}
+%\location{May 2011 | Aggregate : 96.4\%}
+%\sectionspace % Some whitespace after the section
+%\vspace{-1ex}
+%\rule{12cm}{0.5pt}\vspace{2ex}
+%%------------------------------------------------
+%% Projects
+%%------------------------------------------------
+%\section{Research Projects}
+%\runsubsection{Fault localization using Craig Interpolants}\\\vspace{1.5ex}
+%\location{July 2015 - Ongoing | Under \href{http://www.cse.iitk.ac.in/users/subhajit/}{Prof. Subhajit Roy} | \footnotesize{(Source will be released after publication)}}\vspace{0.5em}
+%Ongoing research project in fault localization, using the \href{http://www.cprover.org/cbmc/}{CBMC} model checker, coupled with interpolation procedures from the \href{http://mathsat.fbk.eu/}{MathSAT 5} solver.\vspace{2.5ex}
+%\footnotesize {
+%\begin{tightitemize}
+%\item Modified major sections of CBMC to accomodate trace formula generation for test-cases. 
+%\item Added significant number of modules in CBMC for efficient interaction with the MathSAT interpolation engine.
+%\item Developed a working version of the state-of-the-art fault localization tool \href{http://bugassist.mpi-sws.org/}{BugAssist} for comparision. Quality of our tool's fault localization results is higher as compared to BugAssist.
+%\end{tightitemize}
+%}
+%\sectionspace % Some whitespace after the section
+%\vspace{2ex}
+%\runsubsection{DirectFix Implementation in CBMC}\\\vspace{1.1ex}
+%\location{May 2015 - July 2015 | Under \href{http://www.cse.iitk.ac.in/users/subhajit/}{Prof. Subhajit Roy} |
+  %\hspace{0.3ex}\includegraphics[scale=0.05]{github.png} \hspace{0.4ex}\href{https://github.com/rbavishi/iCBMC}{Code}}\vspace{0.5ex}
+%Implemented the automated repair algorithm, from scratch, described in the \href{https://www.comp.nus.edu.sg/~abhik/pdf/ICSE15-directfix.pdf}{DirectFix} publication using the model checker CBMC, and the \href{https://github.com/Z3Prover/z3}{Z3} solver for the MaxSAT formulation.\vspace{2.5ex}
+%\footnotesize {
+  %\begin{tightitemize}
+  %\item Added multiple modules in CBMC to use the trace formula to generate the \href{http://dl.acm.org/citation.cfm?id=1806833}{component based encoding (CBE)} to be passed as an SMT-Lib formula to Z3.
+  %\end{tightitemize}
+%}
+
+
+\sectionspace
+\rule{12cm}{0.5pt}\vspace{2ex}
+%\vspace{2ex}
+	\section{Education}
+	\runsubsection{Master of Science \textemdash\ Aerospace Engineering} %, Expected Graduation: Aug 2017}
+	\descript{\\University of Cincinnati}
+	\location{2016\textendash 2018}
 	
-\section{Experience}
-\affiliation[Research Engineer]
-			[Cincinnati, OH]
-			{Engineering and Scientific Innovations, Inc.}
-			{2014\textendash Present}
 	\begin{compactitem}
-	\item Overhauled proprietary fire suppressant delivery system resulting in a 70\% efficiency gain.
-	\item Assisted in the prototyping and proof of concept for flow introduction of powdered agent. 
-	\item Performed cavity analysis of hydrodynamic ram events using custom computer code.
-	\end{compactitem}
-	
-\affiliation[Sole Owner and Operator]
-			[Colorado Springs, CO/ Provo, UT]
-			{Green It Up LLC\textemdash Lawn Care Company}
-			{2011\textendash 2013}
-	\begin{compactitem}
-	\item Grossed \$24,000 in sales in first year of operation.
-	\item Satisfied needs of  more than 100 regular clients.
-	\item Maintained brand equity through personal management of 3 employees.
-	\item Managed own finances, accounting and bookkeeping.
-	\item Bought out business partner 3 months after start-up.
-	\item Successfully facilitated transition of business from Colorado to Utah.
+		\item ACCEND Master's Program - Advisor: Dr. Kelly Cohen
+				\subitem Thesis: Genetic Fuzzy Systems for Coupled Dynamic Systems
 	\end{compactitem}
 
-\affiliation[Volunteer Representative, LDS Church]
-			[Philippines]
-			{Philippines Bacolod/Iloilo Mission}
-			{2008\textendash 2010}
-	\begin{compactitem}
-	\item Learned instructional material in foreign language in 4 months.
-	\item Designed and delivered weekly training sessions for up to 20 volunteers.
-	\item Conducted weekly goal setting and accountability meetings.
-	\end{compactitem}
+    \vspace{1em}
+	\runsubsection{Bachelor of Science \textemdash\ Aerospace Engineering} %, Expected Graduation: Apr 2017}
+    \descript{\\University of Cincinnati}
+	\location{2013\textendash 2017}
+	{}
 	
-\affiliation[Crew Leader]
-			[Colorado Springs, CO]
-			{Intermountain Lawns}
-			{2007\textendash 2008}
 	\begin{compactitem}
-	\item Led and supervised crew of 2\textendash 3 people daily.
-	\item Handled and resolved on-site customer concerns.
-	\item Improved maintenance procedure for all company equipment.
-	\item Streamlined daily operations, improving efficiency of small team.
+		\item GPA: 3.87 overall, 3.90 in Aerospace Engineering \textemdash\ Dean's list
+%		\item[]\hspace{-1.5em} \textbf{Honors and Awards}
+%				\item Dean's list \textemdash\ 2013\textendash Present
+		\item Engineer of the Month (Dec 2015); Knowlson and Irene Byar Scholarship Recipient (Jun 2015)
 	\end{compactitem}
-	
-\affiliation[Flight Line Assistant]
-			[USAF Academy, CO]
-			{Embry\textendash Riddle Aeronautical University}
-			{2005\textendash 2006}
-	\begin{compactitem}
-	\item Scheduled flight for over 100 students daily.
-	\item Cleaned and maintained aircraft to ensure flight safety.
-	\item Streamlined student check\textendash in process, increasing instructional flight time.
-	\end{compactitem}
-	
-\section{Skills}
-	\begin{compactitem}
-	\item Beginner to intermediate proficiency in Autodesk AutoCAD and Inventor Pro.
-	\item Basic software development using MATLAB, Python and Visual Basic for Applications.
-	\item \LaTeX\ document preparation and typesetting.
-	\item Familiarity with Linux-based operating systems.
-	\end{compactitem}
+
+%\section{Academic Projects}
+
+%\runsubsection{Median Algorithms for Disk-Resident Data}\\\vspace{0.5ex}
+
+%\location{Aug 2014 – Nov 2014 (Second Year) | Under \href{http://www.cse.iitk.ac.in/users/sbaswana/}{Prof. Surender Baswana} | 
+  %\hspace{0.3ex} \includegraphics[scae=0.025]{drive.png} \hspace{0.4ex}\href{https://drive.google.com/file/d/0B0--s-r8CTxgZTU3RzB3YnhMMVU/view}{Report} \hspace{0.3ex}}
+
+
+%%\location{\hfill \includegraphics[scale=0.05]{github.png} \href{https://github.com/rbavishi/Median-Algorithms-Disk-Resident-Data}{Github Link}\vspace{1ex}}
+%Independently developed a 2-pass deterministic and a 2-pass randomized algorithm to find median of large data-sets (1 Terabyte) with performance tests. \\\vspace{1ex}
+%\vspace{1ex} % Hacky fix for awkward extra vertical space
+%\footnotesize {
+%\begin{tightitemize}
+%\item Deterministic algorithm similar to the original \href{http://polylogblog.files.wordpress.com/2009/08/80munro-median.pdf}{paper} by Munro-Paterson(1980) - An $\epsilon$-approximate median is calculated in the first pass, followed by the exact median value in the second pass.
+%\item Randomized algorithm employed basic random-sampling techniques using Mersenne-Twister PRNG. Success probability close to 0.6 achieved for medium-sized data-sets (10-50 GB)
+%\end{tightitemize}
+%}
+%\sectionspace % Some whitespace after the section
+%\vspace{2ex}
+%%------------------------------------------------
+
+%\runsubsection{Peer-to-Peer Dropbox}\\\vspace{0.5ex}
+%\location{Aug 2013 – Nov 2013 (First Year) | Under \href{http://www.cse.iitk.ac.in/users/subhajit/}{Prof. Subhajit Roy} | 
+	%\hspace{0.3ex}\includegraphics[scale=0.05]{github.png} \hspace{0.15ex} \href{https://github.com/rbavishi/P2P-Dropbox}{P2P Dropbox}}\vspace{1ex}
+
+%A Linux application for back-up and syncing of files between two or more peers
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+%\footnotesize{
+%\begin{tightitemize}
+%\item Users have a shared folder across different machines, with local copies, in which any changes made are synced across all devices
+%\item Linux \href{http://man7.org/linux/man-pages/man7/inotify.7.html}{\textbf{inotify}} API used to track changes in the shared folder and \href{http://linux.about.com/library/cmd/blcmdl1_rsync.htm}{rsync} used to sync the modifications to ensure efficient transfer
+%\item Multithreading with mutexes used to parallelize syncing and file-monitoring operations
+%\end{tightitemize}
+%}
+%\sectionspace
+%\vspace{0.1ex}
+%\rule{12cm}{0.5pt}
+
+%%------------------------------------------------
+%% Awards
+%%------------------------------------------------
+%\vspace{1.5ex}
+%\section{Awards \& Achievements} 
+%\vspace{\topsep}
+%\small{
+%\begin{tightitemize}
+%\item Academic Excellence Award 2013-2014\\
+%\item Secured an All-India-Rank of 202 in JEE Advanced 2013 amongst 150,000 candidates\\
+%\item Secured an All-India-Rank of 175 in JEE Mains 2013 amongst 20,00,000 candidates\\
+%\item Secured an All-India-Rank of 33 in AMTI - Mathematics Olympiad 2013\\
+%\item Best Overall Student (2011-2013) - Shivaji Science College, Nagpur \\
+%\end{tightitemize}
+%}
+\sectionspace % Some whitespace after the section
+\vspace{0.1ex}
+\rule{12cm}{0.25pt}
+\end{minipage} % The end of the right column
+%----------------------------------------------------------------------------------------
+%	SECOND PAGE (If need be)
+%----------------------------------------------------------------------------------------
+
+%\newpage 
+
+%\begin{minipage}[t]{0.30\textwidth} % The left column takes up 30% of the text width of the page.
+
+%\section{}
+
+%\end{minipage} % The end of the left column
+%\hfill
+%\begin{minipage}[t]{0.66\textwidth} % The right column takes up 66% of the text width of the page
+
+%\section{}
+
+%\end{minipage} % The end of the right column
+
+%----------------------------------------------------------------------------------------
+
 \end{document}
