@@ -48,19 +48,21 @@
 % Skills
 %------------------------------------------------
 
-\section{Programming Skills}
+\section{Programming Languages}
 
 \vspace{1em}
 
-\location{Expert:}
+%\location{Expert:}
 \textbullet{} Python \\
-\textbullet{} \LaTeX \\
-\textbullet{} Matlab \\
-\location{Proficient:}
-\textbullet{} C/C++ \\
-\textbullet{} Bash \\
-\location{Novice:}
 \textbullet{} Rust\\
+\textbullet{} \LaTeX \\
+\textbullet{} Bash \\
+\textbullet{} Asm (PPC32, MIPS32) \\
+\textbullet{} C \\
+\textbullet{} Matlab \\
+%\location{Proficient:}
+\textbullet{} C++ \\
+%\location{Novice:}
 
 %\location{Familiar:}
 %Java \textbullet{} JavaScript \textbullet{} Android\\
@@ -75,7 +77,8 @@
 
 Linux/FreeBSD \textbullet{} Unix coreutils\\
 OpenSSH \textbullet{} Gnuplot \textbullet{} Vim\\
-Git\\
+Git \textbullet{} Cross-compilation\\
+GNU Make \textbullet{} CI/CD (Gitlab/Github)
 \sectionspace
 \vspace{-1.5ex}
 \rule{5cm}{0.5pt}
@@ -86,13 +89,17 @@ Git\\
 
 \vspace{1em}
 
+\location{Cyber Security}
+\textbullet{} Reverse Engineering\\
+\textbullet{} Exploit Development\\
+\vspace{1ex}
 \location{Machine learning}
 \textbullet{} Pandas\\
 \textbullet{} scikit-learn\\
-\textbullet{} PyTorch\\
+%\textbullet{} PyTorch\\
 \vspace{1ex}
 \location{Robotics}
-\textbullet{} Robot Operating System \\
+\textbullet{} ROS\\
 \textbullet{} Gazebo Simulator\\
 \vspace{1ex}
 \location{Computer Vision}
@@ -106,8 +113,8 @@ Git\\
 
 \vspace{1em}
 
-\textbullet{} Defense Acquisition University \textemdash\ Science and Technology Manager Level I\\
-\textbullet{} DOD Secret Security Clearance
+\textbullet{} Certified SAFe\textregistered{} Agile Practitioner\\
+\textbullet{} DOD TS/SCI
 \sectionspace
 \vspace{-1ex}
 \rule{5cm}{0.5pt}
@@ -128,25 +135,34 @@ Git\\
 % Experience
 %------------------------------------------------
 	\section{Professional Experience}
+	\runsubsection{Cyber Security Engineer \textendash\ Top Secret Security Clearance}
+	\descript{\\Northrop Grumman \textemdash Xetron \hfill Fairfield, OH}
+	\location{2019\textendash Present}
+	%{}
+	\begin{compactitem}
+        \item Python tool overhaul (multi-arch support)
+        \item CI/CD stuffs. Tool/Build chain stuff
+        \item Team Lead
+        \item Reverse Engineering stuffs
+	\end{compactitem}
+    \vspace{3em}
+
 	\runsubsection{Aerospace Engineer \textendash\ Secret Security Clearance}
 	\descript{\\Air Force Research Laboratory \hfill WPAFB, OH}
-	\location{2017\textendash Present}
+	\location{2017\textendash 2019}
 	%{}
 	\begin{compactitem}
 		\item Received Scientific and Technical Achievement Team Award \textemdash\ F-16 Auto-Strafe ``Death
             Claw''
-        \item Learned and modified legacy graphics library to produce custom simulated aircraft HUD symbols
+        \item Learned and modified legacy OpenGL codebase to produce custom simulated aircraft HUD symbols
             within three weeks
         %\item Quickly implemented required changes to legacy library to modify simulated aircraft HUD for
             %human operators
-		\item Refactored simulation code base into separate modules, enabling both real-time simulation in full
-            simulator as well as constructive standalone simulation
+		\item Modularized simulation code base, enabling both wall-time, and headless simulation
 		%\item Succesfully refactored simulation code base for increased modularity, portability, and
             %maintainability enabling simulation to run in a variety of environments
-        \item Introduced distributed version control (Git) to track changes to and manage deployment of code
-            base across isolated network boundaries
-        \item Manually translated Simulink models into C++, validating correctness of code against original
-            models
+        \item Introduced Git to wrangle scattered code versions and fragments into unified whole
+        \item Manually translated Simulink models into C++, validating model behavior against original
 	\end{compactitem}
     \vspace{3em}
 
@@ -186,57 +202,6 @@ Git\\
 %			\subitem Particle image velocimetry
     \end{compactitem}
 
-%\section{Education}
-
-%\runsubsection{B.Tech | Computer Science}
-%\descript{| Indian Institute of Technology, Kanpur}
-
-%\location{Expected July 2013 – Aug 2017 | GPA : 9.7/10.0 (Overall)}
-%%\vspace{\topsep} % Hacky fix for awkward extra vertical space
-%\sectionspace % Some whitespace after the section
-
-%------------------------------------------------
-
-%\runsubsection{HSC | Class 12}
-%\descript{| Shivaji Science College, Nagpur}
-%\location{May 2013 |  Aggregate : 90.16\%}
-%\sectionspace % Some whitespace after the section
-
-%------------------------------------------------
-
-%\runsubsection{AISSCE | Class 10}
-%\descript{| Modern School, Nagpur}
-%\location{May 2011 | Aggregate : 96.4\%}
-%\sectionspace % Some whitespace after the section
-%\vspace{-1ex}
-%\rule{12cm}{0.5pt}\vspace{2ex}
-%%------------------------------------------------
-%% Projects
-%%------------------------------------------------
-%\section{Research Projects}
-%\runsubsection{Fault localization using Craig Interpolants}\\\vspace{1.5ex}
-%\location{July 2015 - Ongoing | Under \href{http://www.cse.iitk.ac.in/users/subhajit/}{Prof. Subhajit Roy} | \footnotesize{(Source will be released after publication)}}\vspace{0.5em}
-%Ongoing research project in fault localization, using the \href{http://www.cprover.org/cbmc/}{CBMC} model checker, coupled with interpolation procedures from the \href{http://mathsat.fbk.eu/}{MathSAT 5} solver.\vspace{2.5ex}
-%\footnotesize {
-%\begin{tightitemize}
-%\item Modified major sections of CBMC to accomodate trace formula generation for test-cases. 
-%\item Added significant number of modules in CBMC for efficient interaction with the MathSAT interpolation engine.
-%\item Developed a working version of the state-of-the-art fault localization tool \href{http://bugassist.mpi-sws.org/}{BugAssist} for comparision. Quality of our tool's fault localization results is higher as compared to BugAssist.
-%\end{tightitemize}
-%}
-%\sectionspace % Some whitespace after the section
-%\vspace{2ex}
-%\runsubsection{DirectFix Implementation in CBMC}\\\vspace{1.1ex}
-%\location{May 2015 - July 2015 | Under \href{http://www.cse.iitk.ac.in/users/subhajit/}{Prof. Subhajit Roy} |
-  %\hspace{0.3ex}\includegraphics[scale=0.05]{github.png} \hspace{0.4ex}\href{https://github.com/rbavishi/iCBMC}{Code}}\vspace{0.5ex}
-%Implemented the automated repair algorithm, from scratch, described in the \href{https://www.comp.nus.edu.sg/~abhik/pdf/ICSE15-directfix.pdf}{DirectFix} publication using the model checker CBMC, and the \href{https://github.com/Z3Prover/z3}{Z3} solver for the MaxSAT formulation.\vspace{2.5ex}
-%\footnotesize {
-  %\begin{tightitemize}
-  %\item Added multiple modules in CBMC to use the trace formula to generate the \href{http://dl.acm.org/citation.cfm?id=1806833}{component based encoding (CBE)} to be passed as an SMT-Lib formula to Z3.
-  %\end{tightitemize}
-%}
-
-
 \sectionspace
 \rule{12cm}{0.5pt}\vspace{2ex}
 %\vspace{2ex}
@@ -245,10 +210,10 @@ Git\\
 	\descript{\\University of Cincinnati}
 	\location{2016\textendash 2018}
 	
-	\begin{compactitem}
-		\item ACCEND Master's Program - Advisor: Dr. Kelly Cohen
-				\subitem Thesis: Genetic Fuzzy Systems for Coupled Dynamic Systems
-	\end{compactitem}
+	%\begin{compactitem}
+		%\item ACCEND Master's Program - Advisor: Dr. Kelly Cohen
+				%\subitem Thesis: Genetic Fuzzy Systems for Coupled Dynamic Systems
+	%\end{compactitem}
 
     \vspace{1em}
 	\runsubsection{Bachelor of Science \textemdash\ Aerospace Engineering} %, Expected Graduation: Apr 2017}
@@ -256,66 +221,16 @@ Git\\
 	\location{2013\textendash 2017}
 	{}
 	
-	\begin{compactitem}
-		\item GPA: 3.87 overall, 3.90 in Aerospace Engineering \textemdash\ Dean's list
-%		\item[]\hspace{-1.5em} \textbf{Honors and Awards}
-%				\item Dean's list \textemdash\ 2013\textendash Present
-		\item Engineer of the Month (Dec 2015); Knowlson and Irene Byar Scholarship Recipient (Jun 2015)
-	\end{compactitem}
-
-%\section{Academic Projects}
-
-%\runsubsection{Median Algorithms for Disk-Resident Data}\\\vspace{0.5ex}
-
-%\location{Aug 2014 – Nov 2014 (Second Year) | Under \href{http://www.cse.iitk.ac.in/users/sbaswana/}{Prof. Surender Baswana} | 
-  %\hspace{0.3ex} \includegraphics[scae=0.025]{drive.png} \hspace{0.4ex}\href{https://drive.google.com/file/d/0B0--s-r8CTxgZTU3RzB3YnhMMVU/view}{Report} \hspace{0.3ex}}
-
-
-%%\location{\hfill \includegraphics[scale=0.05]{github.png} \href{https://github.com/rbavishi/Median-Algorithms-Disk-Resident-Data}{Github Link}\vspace{1ex}}
-%Independently developed a 2-pass deterministic and a 2-pass randomized algorithm to find median of large data-sets (1 Terabyte) with performance tests. \\\vspace{1ex}
-%\vspace{1ex} % Hacky fix for awkward extra vertical space
-%\footnotesize {
-%\begin{tightitemize}
-%\item Deterministic algorithm similar to the original \href{http://polylogblog.files.wordpress.com/2009/08/80munro-median.pdf}{paper} by Munro-Paterson(1980) - An $\epsilon$-approximate median is calculated in the first pass, followed by the exact median value in the second pass.
-%\item Randomized algorithm employed basic random-sampling techniques using Mersenne-Twister PRNG. Success probability close to 0.6 achieved for medium-sized data-sets (10-50 GB)
-%\end{tightitemize}
-%}
-%\sectionspace % Some whitespace after the section
-%\vspace{2ex}
-%%------------------------------------------------
-
-%\runsubsection{Peer-to-Peer Dropbox}\\\vspace{0.5ex}
-%\location{Aug 2013 – Nov 2013 (First Year) | Under \href{http://www.cse.iitk.ac.in/users/subhajit/}{Prof. Subhajit Roy} | 
-	%\hspace{0.3ex}\includegraphics[scale=0.05]{github.png} \hspace{0.15ex} \href{https://github.com/rbavishi/P2P-Dropbox}{P2P Dropbox}}\vspace{1ex}
-
-%A Linux application for back-up and syncing of files between two or more peers
-%\vspace{\topsep} % Hacky fix for awkward extra vertical space
-%\footnotesize{
-%\begin{tightitemize}
-%\item Users have a shared folder across different machines, with local copies, in which any changes made are synced across all devices
-%\item Linux \href{http://man7.org/linux/man-pages/man7/inotify.7.html}{\textbf{inotify}} API used to track changes in the shared folder and \href{http://linux.about.com/library/cmd/blcmdl1_rsync.htm}{rsync} used to sync the modifications to ensure efficient transfer
-%\item Multithreading with mutexes used to parallelize syncing and file-monitoring operations
-%\end{tightitemize}
-%}
-%\sectionspace
-%\vspace{0.1ex}
-%\rule{12cm}{0.5pt}
+	%\begin{compactitem}
+		%\item GPA: 3.87 overall, 3.90 in Aerospace Engineering \textemdash\ Dean's list
+%%		\item[]\hspace{-1.5em} \textbf{Honors and Awards}
+%%				\item Dean's list \textemdash\ 2013\textendash Present
+		%\item Engineer of the Month (Dec 2015); Knowlson and Irene Byar Scholarship Recipient (Jun 2015)
+	%\end{compactitem}
 
 %%------------------------------------------------
 %% Awards
 %%------------------------------------------------
-%\vspace{1.5ex}
-%\section{Awards \& Achievements} 
-%\vspace{\topsep}
-%\small{
-%\begin{tightitemize}
-%\item Academic Excellence Award 2013-2014\\
-%\item Secured an All-India-Rank of 202 in JEE Advanced 2013 amongst 150,000 candidates\\
-%\item Secured an All-India-Rank of 175 in JEE Mains 2013 amongst 20,00,000 candidates\\
-%\item Secured an All-India-Rank of 33 in AMTI - Mathematics Olympiad 2013\\
-%\item Best Overall Student (2011-2013) - Shivaji Science College, Nagpur \\
-%\end{tightitemize}
-%}
 \sectionspace % Some whitespace after the section
 \vspace{0.1ex}
 \rule{12cm}{0.25pt}
