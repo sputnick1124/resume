@@ -5,6 +5,7 @@
 \usepackage{multicol}
 \usepackage{graphicx}
 \usepackage{paralist}
+\usepackage{awesomebox}
 \definecolor{linkcolour}{rgb}{0.25,0.25,0.6}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
 \begin{document}
@@ -239,19 +240,72 @@ GNU Make \textbullet{} CI/CD (Gitlab/Github)
 %	SECOND PAGE (If need be)
 %----------------------------------------------------------------------------------------
 
-%\newpage 
+\newpage 
 
-%\begin{minipage}[t]{0.30\textwidth} % The left column takes up 30% of the text width of the page.
+\begin{minipage}[t]{0.30\textwidth} % The left column takes up 30% of the text width of the page.
 
-%\section{}
+    \section{Bio}
+    Some stuff about me?
+    \vspace*{3em}
 
-%\end{minipage} % The end of the left column
-%\hfill
-%\begin{minipage}[t]{0.66\textwidth} % The right column takes up 66% of the text width of the page
+    \section{Hobbies}
+    Some things I like to do? Running, climbing, etc.
 
-%\section{}
+\end{minipage} % The end of the left column
+\vrule
+\hfill
+\begin{minipage}[t]{0.66\textwidth} % The right column takes up 66% of the text width of the page
 
-%\end{minipage} % The end of the right column
+    \section{Freelance Software Development}
+	\runsubsection{In-Memory Time-Series Database Development}
+    \descript{\\SliceUp \textemdash{} \url{https://www.sliceup.co/}}
+	\location{Spring 2020}
+	%{}
+	\begin{compactitem}
+        \item Fixed bugs
+        \item Added features
+        \item Wrote documentation
+        \item Learned whole Rust code base
+	\end{compactitem}
+        \parbox{0.5\textwidth}{%
+            \textcolor{gray}{\faQuoteLeft}
+            Nick is an amazingly skilled programmer with incredible insight and knowledge. 
+        \textcolor{gray}{\faQuoteRight}
+    }
+    \vspace{3em}
+
+	\runsubsection{Qt/C++ Gui Widget Development}
+    \descript{\\StreamSpot \textemdash{} \url{https://streamspot.com/}}
+	\location{Spring/Summer 2019}
+	%{}
+	\begin{compactitem}
+		\item Worked closely with client
+        \item Learned Qt framework (slots/signals, \textellipsis, etc)
+		\item 
+        \item
+        \item 
+    \end{compactitem}
+    Client Feedback\\
+    \setlength{\aweboxleftmargin}{0.07\linewidth}
+        \parbox{0.5\textwidth}{%
+            \textcolor{gray}{\faQuoteLeft}
+        Nick was willing to jump in and learn the technology that we were using. He
+        studied our platform, and studied the software that we were integrating with. He has solid
+        technical skills, creativity, a good attitude, and a willingness to collaborate.
+        \textcolor{gray}{\faQuoteRight}
+    }
+
+    \vspace{3em}
+
+    \section{Open Source Contributions}
+    \begin{itemize}
+        \item \verb|spotify-tui| \textendash{} A Rust-powered terminal client for spotify streaming service.
+        \item
+        \item
+    \end{itemize}
+
+
+\end{minipage} % The end of the right column
 
 %----------------------------------------------------------------------------------------
 
