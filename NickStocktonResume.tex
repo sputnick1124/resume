@@ -1,103 +1,348 @@
-\documentclass[letterpaper,10pt]{resume}
+\documentclass[letterpaper]{deedy-resume} 
+\usepackage{textcase}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{graphicx}
 \usepackage{paralist}
-\definecolor{ruleendcolor}{rgb}{0.8,0.8,0.8}
+\usepackage{awesomebox}
+\definecolor{linkcolour}{rgb}{0.25,0.25,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
 
-\author{Nicklas O. Stockton}
-\email{nick.stockton@outlook.com}
-\streetaddress{5274 Brasher Ave.}
-\citystatezip{Blue Ash, OH, 45242}
-\phone{(719)648-3545}
-
-
+\newcommand{\experiencespace}{\vspace{2em}}
 \begin{document}
-\maketitle
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+
+\namesection{Nicklas}{Stockton}{ 
+  %\color{subheadings}  \href{mailto:nicklas.stockton@gmail.com}{nicklas.stockton@gmail.com} |
+  %\color{subheadings}\small 719.648.3545%| \href{https://www.linkedin.com/in/nickstockton/}{https://www.linkedin.com/in/nickstockton}
+}
+
+%----------------------------------------------------------------------------------------
+%	LEFT COLUMN
+%----------------------------------------------------------------------------------------
+\begin{minipage}[t]{0.3\textwidth}% The left column takes up 30% of the text width of the page
+
+%------------------------------------------------
+% Contact & Profiles
+%------------------------------------------------
+
+
+\section{Contact \& Profiles} 
+\vspace{1em}
+%\runsubsection{Address}\\
+%5274 Brasher Avenue\\Blue Ash, Ohio\\45242\\\\\\
+%\vspace{1em}
+\location{
+  % Email
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{ll}
+    {\large\textcolor{gray}{\faEnvelope}} &| 
+        \href{mailto:nicklas.stockton@gmail.com}{nicklas.stockton@gmail.com}\\
+  % Phone Number
+    {\large\textcolor{gray}{\faPhone}} &| 719.648.3545\\
+  % LinkedIn Profile
+    {\large\textcolor{gray}{\faLinkedin}} &|
+    \href[pdfnewwindow=true]{http://in.linkedin.com/in/nickstockton}{nickstockton} \\
+  % Github Profile
+    {\large\textcolor{gray}{\faGithub}} &|
+    \hspace{0.4ex}\href[pdfnewwindow=true]{https://github.com/sputnick1124/}{sputnick1124}\\
+\end{tabular}
+}
+
+\sectionspace % Some whitespace after the section
+\vspace{-1ex}
+\rule{5cm}{0.5pt}
+\vspace{2em}
+
+%------------------------------------------------
+% Skills
+%------------------------------------------------
+
+\section{Programming Languages}
+
+\vspace{1em}
+
+%\location{Expert:}
+\textbullet{} Python \\
+\textbullet{} Rust\\
+\textbullet{} \LaTeX \\
+\textbullet{} Bash \\
+\textbullet{} Asm (PowerPC, MIPS) \\
+\textbullet{} C \\
+\textbullet{} Matlab \\
+%\location{Proficient:}
+\textbullet{} C++ \\
+%\location{Novice:}
+
+%\location{Familiar:}
+%Java \textbullet{} JavaScript \textbullet{} Android\\
+\sectionspace % Some whitespace after the section
+\vspace{-1ex}
+\rule{5cm}{0.5pt}
+\vspace{2em}
+
+\section{Technologies}
+
+\vspace{1em}
+
+Linux/FreeBSD \textbullet{} Unix coreutils\\
+OpenSSH \textbullet{} Gnuplot \textbullet{} Vim\\
+Git \textbullet{} Cross-compilation\\
+GNU Make \textbullet{} CI/CD (Gitlab/Github)
+\sectionspace
+\vspace{-1.5ex}
+\rule{5cm}{0.5pt}
+\vspace{2em}
+
+
+%\section{Interests}
+
+%\vspace{1em}
+
+%\location{Cyber Security}
+%\textbullet{} Reverse Engineering\\
+%\textbullet{} Exploit Development\\
+%\vspace{1ex}
+%\location{Machine learning}
+%\textbullet{} Pandas\\
+%\textbullet{} scikit-learn\\
+%%\textbullet{} PyTorch\\
+%\vspace{1ex}
+%\location{Robotics}
+%\textbullet{} ROS\\
+%\textbullet{} Gazebo Simulator\\
+%\vspace{1ex}
+%\location{Computer Vision}
+%\textbullet{} OpenCV\\
+%\sectionspace
+%\vspace{-1ex}
+%\rule{5cm}{0.5pt}
+%\vspace{2em}
+
+\section{Certifications}
+
+\vspace{1em}
+
+\textbullet{} DOD TS/SCI\\
+\textbullet{} Certified SAFe\textregistered{} Agile Practitioner\\
+\sectionspace
+\vspace{-1ex}
+\rule{5cm}{0.5pt}
+
+
+\vspace{2em}
 \section{Education}
-\affiliation[Bachelor of Science \textendash\ Aerospace Engineering, Dean's List]
-			[Cincinnati, OH]
-			{University of Cincinnati}
-			{2013\textendash Present}
+\vspace{1em}
 
-	\begin{compactitem}
-	\item GPA: 3.87 overall, 3.90 in Aerospace Engineering
-	\item Expected graduation: Spring 2017
-	\end{compactitem}
-	\subsection{Extracurricular}
-	\affiliation[Undergraduate Research]
-				{National Science Foundation}
-				{2013}
-		\begin{compactitem}
-		\item Devised unique solution for optimal active control of dynamic system.
-		\item Presented findings to jury of peers in bi-weekly progress meetings.
-		\end{compactitem}
-				
-	\affiliation[Unmanned Air Vehicle Competition Team Member]
-				{Air Force Research Lab Unmanned Air Systems Conference}
-				{2014}
-		\begin{compactitem}
-		\item Developed software to integrate various hardware components to ease the exchange of sensor data. 
-		\end{compactitem}
-				
-	
-\section{Experience}
-\affiliation[Research Engineer]
-			[Cincinnati, OH]
-			{Engineering and Scientific Innovations, Inc.}
-			{2014\textendash Present}
-	\begin{compactitem}
-	\item Overhauled proprietary fire suppressant delivery system resulting in a 70\% efficiency gain.
-	\item Assisted in the prototyping and proof of concept for flow introduction of powdered agent. 
-	\item Performed cavity analysis of hydrodynamic ram events using custom computer code.
-	\end{compactitem}
-	
-\affiliation[Sole Owner and Operator]
-			[Colorado Springs, CO/ Provo, UT]
-			{Green It Up LLC\textemdash Lawn Care Company}
-			{2011\textendash 2013}
-	\begin{compactitem}
-	\item Grossed \$24,000 in sales in first year of operation.
-	\item Satisfied needs of  more than 100 regular clients.
-	\item Maintained brand equity through personal management of 3 employees.
-	\item Managed own finances, accounting and bookkeeping.
-	\item Bought out business partner 3 months after start-up.
-	\item Successfully facilitated transition of business from Colorado to Utah.
-	\end{compactitem}
+\descript{University of Cincinnati}
+\vspace{0.5em}
+\runsubsection{M.S. \textemdash\ Aerospace Engineering} %, Expected Graduation: Aug 2017}
+\location{2016\textendash 2018}
 
-\affiliation[Volunteer Representative, LDS Church]
-			[Philippines]
-			{Philippines Bacolod/Iloilo Mission}
-			{2008\textendash 2010}
+%\begin{compactitem}
+    %\item ACCEND Master's Program - Advisor: Dr. Kelly Cohen
+            %\subitem Thesis: Genetic Fuzzy Systems for Coupled Dynamic Systems
+%\end{compactitem}
+
+\runsubsection{B.S. \textemdash\ Aerospace Engineering} %, Expected Graduation: Apr 2017}
+%\descript{\\University of Cincinnati}
+\location{2013\textendash 2017}
+{}
+
+%\begin{compactitem}
+    %\item GPA: 3.87 overall, 3.90 in Aerospace Engineering \textemdash\ Dean's list
+%%		\item[]\hspace{-1.5em} \textbf{Honors and Awards}
+%%				\item Dean's list \textemdash\ 2013\textendash Present
+    %\item Engineer of the Month (Dec 2015); Knowlson and Irene Byar Scholarship Recipient (Jun 2015)
+%\end{compactitem}
+
+\sectionspace
+\vspace{-1ex}
+\rule{5cm}{0.5pt}
+
+\vspace{2em}
+\section{Interests/Passions}
+\vspace{1em}
+\textbullet{} Open source software/contribution\\
+\textbullet{} Homemade pasta\\
+\textbullet{} Barefoot running\\
+\textbullet{} Music\\
+%\textbullet{} Coding Challenges (ProjectEuler, Advent of Code)\\
+
+%----------------------------------------------------------------------------------------
+\end{minipage} % The end of the left column
+\hfill
+\vrule
+\hspace{3ex}
+%
+%----------------------------------------------------------------------------------------
+%	RIGHT COLUMN
+%----------------------------------------------------------------------------------------
+%
+\begin{minipage}[t]{0.66\textwidth} % The right column takes up 66% of the text width of the page
+
+%------------------------------------------------
+% Experience
+%------------------------------------------------
+	\section{Professional Experience}
+	\runsubsection{Cyber Security Engineer \textendash\ Top Secret Security Clearance}
+    \descript{\\Northrop Grumman\textemdash{}Xetron \hfill Fairfield, OH}
+	\location{2019\textendash Present}
+	%{}
 	\begin{compactitem}
-	\item Learned instructional material in foreign language in 4 months.
-	\item Designed and delivered weekly training sessions for up to 20 volunteers.
-	\item Conducted weekly goal setting and accountability meetings.
+        \item Technical and project lead for team of 5 engineers working on 2 projects
+        \item Overhauled command-line Python tool to support complex runtime requirements
+        \item Implemented crucial pieces of automated pipeline to streamline product test and release cycle
+        \item Use IDA Pro for software binary reverse engineering tasks
+        \item Passionately push for more streamlined processes and better automation of mundane tasks
 	\end{compactitem}
+    \experiencespace
+
+	\runsubsection{Database Developer}
+    \descript{\\SliceUp \hfill Remote}
+    \location{Feb\textendash{}Apr 2020}
+	%{}
+	\begin{compactitem}
+        \item Adopted previously developed time-series database project without documentation and minimal tests
+        \item Added the ability to index database entries using H3 geospatial indices
+        \item Wrote over 1400 lines of documentation covering the public API
+        \item Added tests to validate high-priority internal functions which uncovered bugs to be fixed
+        \item Complete project timeline was less than 3 months
+	\end{compactitem}
+    %}
+    \experiencespace
+
+	\runsubsection{C++ Qt GUI Developer}
+    \descript{\\StreamSpot \hfill Cincinnati, OH}
+    \location{Feb\textendash{}Jul 2019}
+	%{}
+	\begin{compactitem}
+		\item Developed custom plugin for video streaming service to simplify user experience
+        \item Integrated new features deeply into existing open-source core (OBS Studio)
+        \item Contributed back to community when feasible
+        \item Simplified project architecture and utilized open-source libraries to clean implementation
+    \end{compactitem}
+    %}
+    \experiencespace
+
+	\runsubsection{Aerospace Engineer \textendash\ Secret Security Clearance}
+	\descript{\\Air Force Research Laboratory \hfill WPAFB, OH}
+	\location{2017\textendash 2019}
+	%{}
+	\begin{compactitem}
+		\item Received Scientific and Technical Achievement Team Award \textemdash\ F-16 Auto-Strafe ``Death
+            Claw''
+        \item Learned and modified legacy OpenGL codebase to produce custom simulated aircraft HUD symbols
+            within three weeks
+        %\item Quickly implemented required changes to legacy library to modify simulated aircraft HUD for
+            %human operators
+		\item Modularized simulation code base, enabling both wall-time and headless simulation
+		%\item Succesfully refactored simulation code base for increased modularity, portability, and
+            %maintainability enabling simulation to run in a variety of environments
+        \item Introduced Git to wrangle scattered code versions and fragments into unified whole
+        \item Manually translated Simulink models into C++, validating model behavior against original
+	\end{compactitem}
+    \experiencespace
+
+    \runsubsection{Research Assistant}
+    \descript{\\UAV MASTER Labs \hfill Cincinnati, OH}
+    \location{2015\textendash 2017}
+    \begin{compactitem}
+        \item Introduced real-time simulation capabilities to the lab using ROS and Gazebo softwares, thus
+            enabling quick develop-simulate-fly cycles
+        \item Developed unmanned system platform for mobile autonomous landing operation using a
+            genetically-tuned fuzzy logic controller
+%			\subitem Using a genetically-tuned fuzzy controller to control actuation.
+        \item Developed self-navigation autonomous quadcopter for tunnel exploration using 2-D lidar sensor
+            and API to third party contractor code
+%			\subitem Self-localized using a 2-D lidar sensor.
+%			\subitem Self-navigating using API to third party contractor code.
+        \item Integrated camera motion capture system with flight controllers for indoor autonomous flight
+            using ROS
+    \end{compactitem}
+    \experiencespace
+    
+    %\runsubsection{Research Engineer}
+    %\descript{\\Engineering and Scientific Innovations, Inc. \hfill Cincinnati, OH}
+    %\location{2014\textendash 2015}
+    %\begin{compactitem}
+%%		\item Overhauled proprietary fire suppressant delivery system resulting in a 70\% efficiency gain.
+        %\item Improved response time by 70\% of rapid fire suppression system by simplifying and optimizing
+            %computer vision routines with OpenCV
+%%			\subitem Simplified computer vision technique.
+%%			\subitem Implemented novel image queuing method.
+%%			\subitem Designed and fabricated custom circuit board for interfacing with a single board computer
+%%		\item Proposed and assisted in the implementation for a new method of flow introduction of powdered agent. 
+%%		\item Performed high\textendash speed cavity analysis of hydrodynamic ram events using custom code.
+        %\item Wrote custom utility using OpenCV to analyze cavity dynamics of hydrodynamic ram events
+        %\item Created custom programs to perform image velocimetry and droplet sizing on particle clouds
+%%			\subitem Bullet hole analysis
+%%			\subitem Particle image velocimetry
+    %\end{compactitem}
+
+%\sectionspace
+%\rule{12cm}{0.5pt}\vspace{2ex}
+%\vspace{2ex}
+	%\section{Education}
+	%\runsubsection{Master of Science \textemdash\ Aerospace Engineering} %, Expected Graduation: Aug 2017}
+	%\descript{\\University of Cincinnati}
+	%\location{2016\textendash 2018}
 	
-\affiliation[Crew Leader]
-			[Colorado Springs, CO]
-			{Intermountain Lawns}
-			{2007\textendash 2008}
-	\begin{compactitem}
-	\item Led and supervised crew of 2\textendash 3 people daily.
-	\item Handled and resolved on-site customer concerns.
-	\item Improved maintenance procedure for all company equipment.
-	\item Streamlined daily operations, improving efficiency of small team.
-	\end{compactitem}
+	%%\begin{compactitem}
+		%%\item ACCEND Master's Program - Advisor: Dr. Kelly Cohen
+				%%\subitem Thesis: Genetic Fuzzy Systems for Coupled Dynamic Systems
+	%%\end{compactitem}
+
+    %\vspace{1em}
+	%\runsubsection{Bachelor of Science \textemdash\ Aerospace Engineering} %, Expected Graduation: Apr 2017}
+    %\descript{\\University of Cincinnati}
+	%\location{2013\textendash 2017}
+	%{}
 	
-\affiliation[Flight Line Assistant]
-			[USAF Academy, CO]
-			{Embry\textendash Riddle Aeronautical University}
-			{2005\textendash 2006}
-	\begin{compactitem}
-	\item Scheduled flight for over 100 students daily.
-	\item Cleaned and maintained aircraft to ensure flight safety.
-	\item Streamlined student check\textendash in process, increasing instructional flight time.
-	\end{compactitem}
-	
-\section{Skills}
-	\begin{compactitem}
-	\item Beginner to intermediate proficiency in Autodesk AutoCAD and Inventor Pro.
-	\item Basic software development using MATLAB, Python and Visual Basic for Applications.
-	\item \LaTeX\ document preparation and typesetting.
-	\item Familiarity with Linux-based operating systems.
-	\end{compactitem}
+	%%\begin{compactitem}
+		%%\item GPA: 3.87 overall, 3.90 in Aerospace Engineering \textemdash\ Dean's list
+%%%		\item[]\hspace{-1.5em} \textbf{Honors and Awards}
+%%%				\item Dean's list \textemdash\ 2013\textendash Present
+		%%\item Engineer of the Month (Dec 2015); Knowlson and Irene Byar Scholarship Recipient (Jun 2015)
+	%%\end{compactitem}
+
+%%------------------------------------------------
+%% Awards
+%%------------------------------------------------
+%\sectionspace % Some whitespace after the section
+%\vspace{0.1ex}
+%\rule{12cm}{0.25pt}
+\end{minipage} % The end of the right column
+%----------------------------------------------------------------------------------------
+%	SECOND PAGE (If need be)
+%----------------------------------------------------------------------------------------
+
+%\newpage 
+
+%\begin{minipage}[t]{0.30\textwidth} % The left column takes up 30% of the text width of the page.
+
+    %\section{Bio}
+    %Some stuff about me?
+    %\vspace*{3em}
+
+    %\section{Hobbies}
+    %Some things I like to do? Running, pasta, etc.
+
+%\end{minipage} % The end of the left column
+%\vrule
+%\hfill
+%\begin{minipage}[t]{0.66\textwidth} % The right column takes up 66% of the text width of the page
+
+    %\vspace{3em}
+
+
+%\end{minipage} % The end of the right column
+
+%----------------------------------------------------------------------------------------
+
 \end{document}

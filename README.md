@@ -1,1 +1,1 @@
-Current working resumes and CV's
+[Resume](https://sputnick1124.github.io/resume/NickStocktonResume.pdf)
