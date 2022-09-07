@@ -50,7 +50,7 @@
 \fontsize{25pt}{50pt} % Font size
 \fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #1 % First name font
 \fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #2 % Last name font
-} \\[5pt] % Whitespace between the name and contact information
+} \\ % Whitespace between the name and contact information
 \centering{ % Center the contact information
 \color{headings} % Use the headings color
 \fontspec[Path = fonts/lato/]{Lato-Reg}\fontsize{10pt}{5pt}\selectfont #3} % Contact information font
@@ -64,8 +64,8 @@
 
 \usepackage{titlesec} % Required for customizing section/subsection/etc titles
 
-\titlespacing{\section}{0pt}{0pt}{5pt} % Removes the spacing around the main section titles
-\titlespacing{\subsection}{0pt}{0pt}{0pt} % Removes the spacing around the subsections
+\titlespacing{\section}{0pt}{0pt}{5pt}
+\titlespacing{\subsection}{-1em}{3ex}{1ex}
 \newcommand{\sectionspace}{\vspace{9pt}} % Defines a command to add a set amount of space after sections and subsections
 
 \titleformat{\section}{ % Customize the large section titles
@@ -81,7 +81,7 @@
 \color{subheadings}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{9pt}{10pt}\selectfont\uppercase {#1 \\} \normalfont}
 
 \newcommand{\location}[1]{ % Used for specifying a duration and/or location under a subsection
-\color{headings}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{9pt}{12pt}\selectfont {#1\\} \normalfont}
+\color{headings}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{9pt}{12pt}\selectfont{\hspace{1.5em}#1\\} \normalfont}
 
 %----------------------------------------------------------------------------------------
 %	SECTION TITLE STYLING AND SPACING

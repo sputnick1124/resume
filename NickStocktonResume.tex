@@ -9,7 +9,8 @@
 \definecolor{linkcolour}{rgb}{0.25,0.25,0.6}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
 
-\newcommand{\experiencespace}{\vspace{2em}}
+\newcommand{\experiencespace}{\vspace{2ex}}
+
 \begin{document}
 
 %----------------------------------------------------------------------------------------
@@ -17,12 +18,12 @@
 %----------------------------------------------------------------------------------------
 
 
-\namesection{Nicklas}{Stockton}{ }
+\namesection{Nicklas}{Stockton}{}
 
 %----------------------------------------------------------------------------------------
 %    LEFT COLUMN
 %----------------------------------------------------------------------------------------
-\begin{minipage}[t]{0.3\textwidth}% The left column takes up 30% of the text width of the page
+\begin{minipage}[t]{0.26\textwidth}
 
 %------------------------------------------------
 % Contact & Profiles
@@ -30,22 +31,22 @@
 
 
 \section{Contact \& Profiles} 
-\vspace{1em}
 
 \location{
   % Email
-\setlength{\tabcolsep}{3pt}
+\setlength{\tabcolsep}{2pt}
+\newcommand{\icobullet}[1]{\large\textcolor{gray}{#1}}
 \begin{tabular}{ll}
-    {\large\textcolor{gray}{\faEnvelope}} &| 
-        \href{mailto:nicklas.stockton@google.com}{nicklas.stockton@google.com}\\
+    \icobullet{\faEnvelope} &
+        \href{mailto:nicklas.stockton@gmail.com}{nicklas.stockton@gmail.com}\\
   % Phone Number
-    {\large\textcolor{gray}{\hspace{3pt}\faMobile}} &| 719.648.3545\\
-    {\large\textcolor{gray}{\faPhone}} &| 513.881.3243\\
+    \icobullet{\faPhone} & 719.648.3545\\
+    %\icobullet{\faPhone} &| 513.881.3243\\
   % LinkedIn Profile
-    {\large\textcolor{gray}{\faLinkedin}} &|
+    \icobullet{\faLinkedin} &
     \href[pdfnewwindow=true]{http://in.linkedin.com/in/nickstockton}{nickstockton} \\
   % Github Profile
-    {\large\textcolor{gray}{\faGithub}} &|
+    \icobullet{\faGithub} &
     \hspace{0.4ex}\href[pdfnewwindow=true]{https://github.com/sputnick1124/}{sputnick1124}\\
 \end{tabular}
 }
@@ -63,19 +64,15 @@
 
 \vspace{1em}
 
-%\location{Expert:}
 \textbullet{} Python \\
 \textbullet{} Rust\\
 \textbullet{} \LaTeX \\
+\textbullet{} C \\
+\textbullet{} C++ \\
 \textbullet{} Bash \\
 \textbullet{} Asm (PowerPC, MIPS) \\
-\textbullet{} C \\
 \textbullet{} Matlab \\
-%\location{Proficient:}
-\textbullet{} C++ \\
-%\location{Novice:}
 
-%\location{Familiar:}
 \sectionspace % Some whitespace after the section
 \vspace{-1ex}
 \rule{5cm}{0.5pt}
@@ -88,7 +85,8 @@
 Linux/FreeBSD \textbullet{} Unix coreutils\\
 OpenSSH \textbullet{} Gnuplot \textbullet{} Vim\\
 Git \textbullet{} Cross-compilation\\
-GNU Make \textbullet{} CI/CD (Gitlab/Github)
+GNU Make \textbullet{} CI/CD (Gitlab/Github)\\
+CMake \textbullet{} Docker/Podman
 \sectionspace
 \vspace{-1.5ex}
 \rule{5cm}{0.5pt}
@@ -98,67 +96,38 @@ GNU Make \textbullet{} CI/CD (Gitlab/Github)
 %\section{Interests}
 
 %\vspace{1em}
+%\newcommand{\minisection}[1]{
+%\color{headings}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{9pt}{12pt}\selectfont {#1\\} \normalfont}
 
-%\location{Cyber Security}
+%\minisection{Cyber Security}
 %\textbullet{} Reverse Engineering\\
 %\textbullet{} Exploit Development\\
 %\vspace{1ex}
-%\location{Machine learning}
+%\minisection{Machine learning}
 %\textbullet{} Pandas\\
 %\textbullet{} scikit-learn\\
-%%\textbullet{} PyTorch\\
 %\vspace{1ex}
-%\location{Robotics}
+%\minisection{Robotics}
 %\textbullet{} ROS\\
 %\textbullet{} Gazebo Simulator\\
 %\vspace{1ex}
-%\location{Computer Vision}
+%\minisection{Computer Vision}
 %\textbullet{} OpenCV\\
 %\sectionspace
 %\vspace{-1ex}
 %\rule{5cm}{0.5pt}
 %\vspace{2em}
 
-\section{Certifications}
+%\section{Certifications}
 
-\vspace{1em}
-
-\textbullet{} DOD Top Secret Clearance\\
-\textbullet{} Certified SAFe\textregistered{} Agile Practitioner\\
-\sectionspace
-\vspace{-1ex}
-\rule{5cm}{0.5pt}
-
-
-%\vspace{2em}
-%\section{Education}
 %\vspace{1em}
 
-%\descript{University of Cincinnati}
-%\vspace{0.5em}
-%\runsubsection{M.S. \textemdash\ Aerospace Engineering} %, Expected Graduation: Aug 2017}
-%\location{2016\textendash 2018}
-
-%%\begin{compactitem}
-    %%\item ACCEND Master's Program - Advisor: Dr. Kelly Cohen
-            %%\subitem Thesis: Genetic Fuzzy Systems for Coupled Dynamic Systems
-%%\end{compactitem}
-
-%\runsubsection{B.S. \textemdash\ Aerospace Engineering} %, Expected Graduation: Apr 2017}
-%%\descript{\\University of Cincinnati}
-%\location{2013\textendash 2017}
-%{}
-
-%\begin{compactitem}
-    %\item GPA: 3.87 overall, 3.90 in Aerospace Engineering \textemdash\ Dean's list
-%%        \item[]\hspace{-1.5em} \textbf{Honors and Awards}
-%%                \item Dean's list \textemdash\ 2013\textendash Present
-    %\item Engineer of the Month (Dec 2015); Knowlson and Irene Byar Scholarship Recipient (Jun 2015)
-%\end{compactitem}
-
+%\textbullet{} DOD Top Secret Clearance\\
+%\textbullet{} Certified SAFe\textregistered{} Agile Practitioner\\
 %\sectionspace
 %\vspace{-1ex}
 %\rule{5cm}{0.5pt}
+
 
 \vspace{2em}
 \section{Interests/Passions}
@@ -167,7 +136,7 @@ GNU Make \textbullet{} CI/CD (Gitlab/Github)
 \textbullet{} Homemade pasta\\
 \textbullet{} Barefoot running\\
 \textbullet{} Music\\
-%\textbullet{} Coding Challenges (ProjectEuler, Advent of Code)\\
+\textbullet{} Robotics/Simulation (ROS)\\
 
 %----------------------------------------------------------------------------------------
 \end{minipage} % The end of the left column
@@ -179,28 +148,61 @@ GNU Make \textbullet{} CI/CD (Gitlab/Github)
 %    RIGHT COLUMN
 %----------------------------------------------------------------------------------------
 %
-\begin{minipage}[t]{0.66\textwidth} % The right column takes up 66% of the text width of the page
+\begin{minipage}[t]{0.70\textwidth} % The right column takes up 66% of the text width of the page
 
 %------------------------------------------------
 % Experience
 %------------------------------------------------
-    \section{Professional Experience}
-    \runsubsection{Cyber Security Engineer \textendash\ Top Secret Security Clearance}
-    \descript{\\Northrop Grumman\textemdash{}Xetron \hfill Fairfield, OH}
-    \location{2019\textendash Present}
+    %\section{Professional Experience}
+    \subsection{Northrop Grumman}
+    \descript{Principal FTL Systems Engineer (Software)}
+    \begin{compactitem}
+    \item Future Technical Leaders (FTL) is highly competitive three-year technical and professional
+        development program aimed at identifying and developing high-potential engineers and technologists to
+        become future industry leaders 
+    \end{compactitem}
+    \experiencespace
+
+    \location{2022\textendash Present\hfill{}Annapolis, MD}
+    %{}
+    \begin{compactitem}
+        \item Technical and agile scrum lead for team of 5 engineers
+        \item Design and implement modernized versions of legacy applications
+        \begin{compactitem}
+            \item Replace Windows VB application with Qt application
+            \item Replace legacy communication middleware with modern OSS frameworks
+            \item Port non-realtime hardware controller components from RTOS to Linux
+        \end{compactitem}
+    \end{compactitem}
+    \experiencespace
+
+    \location{2021\textendash 2022\hfill{}Fairfield, OH}
+    %{}
+    \begin{compactitem}
+        \item Modernized developer toolset and workflow to enable better collaboration and automation,
+            eliminating mundane tasks and reducing developer merge times (from days to minutes)
+        \item Mentored new developers and provided technical guidance for software design and implementation
+        \item Developed Linux kernel module modifications to support customized Xilinx FPGA data acquisition
+            hardware
+        \item Developed RF data visualization tools to support data validation and verification activities
+    \end{compactitem}
+    \experiencespace
+
+    \descript{Cyber Software Engineer}
+    \location{2019\textendash 2021\hfill{}Fairfield, OH}
     %{}
     \begin{compactitem}
         \item Technical and project lead for team of 6 engineers supporting multiple customer deliveries
-        \item Overhauled command-line Python tool to support complex runtime requirements
+        %\item Overhauled command-line Python tool to support complex runtime requirements
         \item Implemented crucial pieces of automated pipeline to streamline product test and release cycle
-        \item Use IDA Pro for software binary reverse engineering tasks
-        \item Passionately push for more streamlined processes and better automation of mundane tasks to
+        %\item Used IDA Pro for software binary reverse engineering tasks
+        \item Passionately pushed for more streamlined processes and better automation of mundane tasks to
             improve developer quality of life
     \end{compactitem}
     \experiencespace
 
-    \runsubsection{Database Developer - Rust (Contract)}
-    \descript{\\SliceUp \hfill Remote}
+    \subsection{Freelance}
+    \descript{Database Developer - Rust}
     \location{Feb\textendash{}Apr 2020}
     %{}
     \begin{compactitem}
@@ -213,8 +215,7 @@ GNU Make \textbullet{} CI/CD (Gitlab/Github)
     %}
     \experiencespace
 
-    \runsubsection{Qt GUI Developer - C++ (Contract)}
-    \descript{\\StreamSpot \hfill Cincinnati, OH}
+    \descript{Qt GUI Developer - C++}
     \location{Feb\textendash{}Jul 2019}
     %{}
     \begin{compactitem}
@@ -226,60 +227,60 @@ GNU Make \textbullet{} CI/CD (Gitlab/Github)
     %}
     \experiencespace
 
-    \runsubsection{Aerospace Engineer \textendash\ Secret Security Clearance}
-    \descript{\\Air Force Research Laboratory \hfill WPAFB, OH}
-    \location{2017\textendash 2019}
+    \subsection{Air Force Research Laboratory}
+    \descript{Aerospace Engineer}
+    \location{2017\textendash 2019\hfill{} WPAFB, OH}
     %{}
     \begin{compactitem}
         \item Received Scientific and Technical Achievement Team Award \textemdash\ F-16 Auto-Strafe ``Death
             Claw''
         \item Learned and modified legacy OpenGL codebase to produce custom simulated aircraft HUD symbols
             within three weeks
-        \item Quickly implemented required changes to legacy library to modify simulated aircraft HUD for
-            human operators
-        \item Modularized simulation code base, enabling both wall-time and headless simulation
-        \item Succesfully refactored simulation code base for increased modularity, portability, and
+        %\item Quickly implemented required changes to legacy library to modify simulated aircraft HUD for
+            %human operators
+        %\item Modularized simulation code base, enabling both wall-time and headless simulation
+        \item Successfully refactored simulation code base for increased modularity, portability, and
             maintainability enabling simulation to run in a variety of environments
         \item Introduced Git to wrangle scattered code versions and fragments into unified whole
         \item Manually translated Simulink models into C++, validating model behavior against original
     \end{compactitem}
-    \experiencespace
+    %\experiencespace
 
-    \runsubsection{Research Assistant}
-    \descript{\\UAV MASTER Labs \hfill Cincinnati, OH}
-    \location{2015\textendash 2017}
-    \begin{compactitem}
-        \item Introduced real-time simulation capabilities to the lab using ROS and Gazebo softwares, thus
-            enabling quick develop-simulate-fly cycles
-        \item Developed unmanned system platform for mobile autonomous landing operation using a
-            genetically-tuned fuzzy logic controller
-%            \subitem Using a genetically-tuned fuzzy controller to control actuation.
-        \item Developed self-navigation autonomous quadcopter for tunnel exploration using 2-D lidar sensor
-            and API to third party contractor code
-%            \subitem Self-localized using a 2-D lidar sensor.
-%            \subitem Self-navigating using API to third party contractor code.
-        \item Integrated camera motion capture system with flight controllers for indoor autonomous flight
-            using ROS
-    \end{compactitem}
-    \experiencespace
+    %\runsubsection{Research Assistant}
+    %\descript{\\UAV MASTER Labs \hfill Cincinnati, OH}
+    %\location{2015\textendash 2017}
+    %\begin{compactitem}
+        %\item Introduced real-time simulation capabilities to the lab using ROS and Gazebo softwares, thus
+            %enabling quick develop-simulate-fly cycles
+        %\item Developed unmanned system platform for mobile autonomous landing operation using a
+            %genetically-tuned fuzzy logic controller
+%%            \subitem Using a genetically-tuned fuzzy controller to control actuation.
+        %\item Developed self-navigation autonomous quadcopter for tunnel exploration using 2-D lidar sensor
+            %and API to third party contractor code
+%%            \subitem Self-localized using a 2-D lidar sensor.
+%%            \subitem Self-navigating using API to third party contractor code.
+        %\item Integrated camera motion capture system with flight controllers for indoor autonomous flight
+            %using ROS
+    %\end{compactitem}
+    %\experiencespace
     
-    \runsubsection{Research Engineer}
-    \descript{\\Engineering and Scientific Innovations, Inc. \hfill Cincinnati, OH}
-    \location{2014\textendash 2015}
-    \begin{compactitem}
-%        \item Overhauled proprietary fire suppressant delivery system resulting in a 70\% efficiency gain.
-        \item Improved response time by 70\% of rapid fire suppression system by simplifying and optimizing
-            computer vision routines with OpenCV
-%            \subitem Simplified computer vision technique.
-%            \subitem Implemented novel image queuing method.
-%            \subitem Designed and fabricated custom circuit board for interfacing with a single board computer
-%        \item Proposed and assisted in the implementation for a new method of flow introduction of powdered agent. 
-%        \item Performed high\textendash speed cavity analysis of hydrodynamic ram events using custom code.
-        \item Wrote custom utility using OpenCV to analyze cavity dynamics of hydrodynamic ram events
-        \item Created custom programs to perform image velocimetry and droplet sizing on particle clouds
-%            \subitem Bullet hole analysis
-%            \subitem Particle image velocimetry
-    \end{compactitem}
+    %\runsubsection{Research Engineer}
+    %\descript{\\Engineering and Scientific Innovations, Inc. \hfill Cincinnati, OH}
+    %\location{2014\textendash 2015}
+    %\begin{compactitem}
+%%        \item Overhauled proprietary fire suppressant delivery system resulting in a 70\% efficiency gain.
+        %\item Improved response time by 70\% of rapid fire suppression system by simplifying and optimizing
+            %computer vision routines with OpenCV
+%%            \subitem Simplified computer vision technique.
+%%            \subitem Implemented novel image queuing method.
+%%            \subitem Designed and fabricated custom circuit board for interfacing with a single board computer
+%%        \item Proposed and assisted in the implementation for a new method of flow introduction of powdered agent. 
+%%        \item Performed high\textendash speed cavity analysis of hydrodynamic ram events using custom code.
+        %\item Wrote custom utility using OpenCV to analyze cavity dynamics of hydrodynamic ram events
+        %\item Created custom programs to perform image velocimetry and droplet sizing on particle clouds
+%%            \subitem Bullet hole analysis
+%%            \subitem Particle image velocimetry
+    %\end{compactitem}
 \end{minipage} % The end of the right column
 
 %%------------------------------------------------
@@ -377,7 +378,7 @@ GNU Make \textbullet{} CI/CD (Gitlab/Github)
             of Cincinnati}, 2018
         \item Lamping, A., Ouwerkerk, J., Stockton, N., Cohen, K., Kumar, M., Casbeer, D., ``Multi-UAV Control
             and Supervision with ROS'', \emph{Aviation Technology, Integration, and Operations Conference},
-            AIAA, Atlanta,GAL, 2018.
+            AIAA, Atlanta, GA, 2018.
         \item Stockton, N., Kumar, M., Cohen, K., ``A Fuzzy-Logic-Based Solution to Dynamic Target
             Interception and Landing with a Small Multirotor Aircraft'', \emph{SciTech}, AIAA, Grapevine, TX,
             2017.
