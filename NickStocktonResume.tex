@@ -1,6 +1,7 @@
+%! TeX program = xelatex
 \documentclass[letterpaper]{deedy-resume} 
 \usepackage{textcase}
-\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[dvipsnames]{xcolor}
 \usepackage{hyperref}
 \usepackage{multicol}
 \usepackage{graphicx}
@@ -16,20 +17,16 @@
 %----------------------------------------------------------------------------------------
 %    TITLE SECTION
 %----------------------------------------------------------------------------------------
-
-
 \namesection{Nicklas}{Stockton}{}
 
 %----------------------------------------------------------------------------------------
 %    LEFT COLUMN
 %----------------------------------------------------------------------------------------
-\begin{minipage}[t]{0.26\textwidth}
+\begin{minipage}[t]{0.25\textwidth}
 
 %------------------------------------------------
 % Contact & Profiles
 %------------------------------------------------
-
-
 \section{Contact \& Profiles} 
 
 \location{
@@ -41,7 +38,7 @@
         \href{mailto:nicklas.stockton@gmail.com}{nicklas.stockton@gmail.com}\\
   % Phone Number
     \icobullet{\faPhone} & 719.648.3545\\
-    %\icobullet{\faPhone} &| 513.881.3243\\
+    \icobullet{\faPhone} &| 513.881.3243\\
   % LinkedIn Profile
     \icobullet{\faLinkedin} &
     \href[pdfnewwindow=true]{http://in.linkedin.com/in/nickstockton}{nickstockton} \\
@@ -64,12 +61,12 @@
 
 \vspace{1em}
 
-\textbullet{} Python \\
 \textbullet{} Rust\\
-\textbullet{} \LaTeX \\
+\textbullet{} Python \\
 \textbullet{} C \\
 \textbullet{} C++ \\
 \textbullet{} Bash \\
+\textbullet{} \LaTeX \\
 \textbullet{} Asm (PowerPC, MIPS) \\
 \textbullet{} Matlab \\
 
@@ -134,6 +131,8 @@ CMake \textbullet{} Docker/Podman
 \vspace{1em}
 \textbullet{} Open source software/contribution\\
 \textbullet{} Homemade pasta\\
+\textbullet{} Pottery\\
+\textbullet{} Woodcarving\\
 \textbullet{} Barefoot running\\
 \textbullet{} Music\\
 \textbullet{} Robotics/Simulation (ROS)\\
@@ -156,24 +155,34 @@ CMake \textbullet{} Docker/Podman
     \phantomsection{}
     \addcontentsline{toc}{section}{Professional Experience}
     \subsection{Northrop Grumman}
-    \descript{Principal FTL Systems Engineer (Software)}
-    \begin{compactitem}
-    \item Future Technical Leaders (FTL) is highly competitive three-year technical and professional
+    \descript{Principal FTL Engineeering and Science (Software)}
+    % \begin{compactitem}
+    \vspace{1em}
+    Future Technical Leaders (FTL) is highly competitive three-year technical and professional
         development program aimed at identifying and developing high-potential engineers and technologists to
         become future industry leaders 
+    % \end{compactitem}
+    \experiencespace
+
+    \location{2023\textendash Present\hfill{}Boulder, CO}
+    %{}
+    \begin{compactitem}
+        \item Develop and maintain algorithms to support the national missile defense mission
+        \item Facilitate team migration to modern tools and infrastructure from legacy system
+        \item Root cause analysis for software and algorithmic bugs in large code base
     \end{compactitem}
     \experiencespace
 
-    \location{2022\textendash Present\hfill{}Annapolis, MD}
+    \location{2022\textendash 2023\hfill{}Annapolis, MD}
     %{}
     \begin{compactitem}
-        \item Technical and agile scrum lead for team of 5 engineers
-        \item Design and implement modernized versions of legacy applications
+        \item Designed and implemented modernized versions of legacy applications
         \begin{compactitem}
-            \item Replace Windows VB application with Qt application
-            \item Replace legacy communication middleware with modern OSS frameworks
-            \item Port non-realtime hardware controller components from RTOS to Linux
+            \item Replaced Windows VB application with Qt 5
+            \item Replaced legacy communication middleware with modern OSS frameworks
+            \item Ported non-realtime hardware controller components from RTOS to Linux
         \end{compactitem}
+    \item Led team of software engineers
     \end{compactitem}
     \experiencespace
 
@@ -202,32 +211,33 @@ CMake \textbullet{} Docker/Podman
     \end{compactitem}
     \experiencespace
 
-    \subsection{Freelance}
-    \descript{Database Developer - Rust}
-    \location{Feb\textendash{}Apr 2020}
-    %{}
-    \begin{compactitem}
-        \item Adopted previously developed time-series database project without documentation and minimal tests
-        \item Added the ability to index database entries using H3 geospatial indices
-        \item Wrote over 1400 lines of documentation covering the public API
-        \item Added tests to validate high-priority internal functions which uncovered bugs to be fixed
-        \item Complete project timeline was less than 3 months
-    \end{compactitem}
-    %}
-    \experiencespace
-
-    \descript{Qt GUI Developer - C++}
-    \location{Feb\textendash{}Jul 2019}
-    %{}
-    \begin{compactitem}
-        \item Developed custom plugin for video streaming service to simplify user experience
-        \item Integrated new features deeply into existing open-source core (OBS Studio)
-        \item Contributed back to community when feasible
-        \item Simplified project architecture and utilized open-source libraries to clean implementation
-    \end{compactitem}
-    %}
-    \experiencespace
-
+    % \subsection{Freelance}
+    % \descript{Database Developer - Rust}
+    % \location{Feb\textendash{}Apr 2020\hfill{}Remote}
+    % %{}
+    % \begin{compactitem}
+    %     \item Adopted previously developed time-series database project without documentation and minimal tests
+    %     \item Added the ability to index database entries using H3 geospatial indices
+    %     \item Wrote over 1400 lines of documentation covering the public API
+    %     \item Added tests to validate high-priority internal functions which uncovered bugs to be fixed
+    %     \item Complete project timeline was less than 3 months
+    % \end{compactitem}
+    % %}
+    % \experiencespace
+    %
+    % \descript{Qt GUI Developer - C++}
+    % \location{Feb\textendash{}Jul 2019\hfill{}Cincinnati, OH}
+    % %{}
+    % \begin{compactitem}
+    %     \item Developed custom plugin for video streaming service to simplify user experience
+    %     \item Integrated plugin tightly with main application framework (OBS Studio), contributing features back into
+    %         community project where feasible
+    %     % \item Contributed back to community when feasible
+    %     \item Simplified project architecture using open-source libraries
+    % \end{compactitem}
+    % %}
+    % \experiencespace
+    %
     \subsection{Air Force Research Laboratory}
     \descript{Aerospace Engineer}
     \location{2017\textendash 2019\hfill{} WPAFB, OH}
@@ -242,46 +252,46 @@ CMake \textbullet{} Docker/Podman
         %\item Modularized simulation code base, enabling both wall-time and headless simulation
         \item Successfully refactored simulation code base for increased modularity, portability, and
             maintainability enabling simulation to run in a variety of environments
-        \item Introduced Git to wrangle scattered code versions and fragments into unified whole
+        % \item Introduced Git to wrangle scattered code versions and fragments into unified whole
         \item Manually translated Simulink models into C++, validating model behavior against original
     \end{compactitem}
     %\experiencespace
 
-    %\runsubsection{Research Assistant}
-    %\descript{\\UAV MASTER Labs \hfill Cincinnati, OH}
-    %\location{2015\textendash 2017}
-    %\begin{compactitem}
-        %\item Introduced real-time simulation capabilities to the lab using ROS and Gazebo softwares, thus
-            %enabling quick develop-simulate-fly cycles
-        %\item Developed unmanned system platform for mobile autonomous landing operation using a
-            %genetically-tuned fuzzy logic controller
-%%            \subitem Using a genetically-tuned fuzzy controller to control actuation.
-        %\item Developed self-navigation autonomous quadcopter for tunnel exploration using 2-D lidar sensor
-            %and API to third party contractor code
-%%            \subitem Self-localized using a 2-D lidar sensor.
-%%            \subitem Self-navigating using API to third party contractor code.
-        %\item Integrated camera motion capture system with flight controllers for indoor autonomous flight
-            %using ROS
-    %\end{compactitem}
-    %\experiencespace
+    \subsection{UAV MASTER Labs \textendash{} University of Cincinnati \hfill Cincinnati, OH}
+    \descript{Research Assistant}
+    \location{2015\textendash 2017}
+    \begin{compactitem}
+        \item Introduced real-time simulation capabilities to the lab using ROS and Gazebo softwares, thus
+            enabling quick develop-simulate-fly cycles
+        \item Developed unmanned system platform for mobile autonomous landing operation using a
+            genetically-tuned fuzzy logic controller
+            \subitem Using a genetically-tuned fuzzy controller to control actuation.
+        \item Developed self-navigation autonomous quadcopter for tunnel exploration using 2-D lidar sensor
+            and API to third party contractor code
+            \subitem Self-localized using a 2-D lidar sensor.
+            \subitem Self-navigating using API to third party contractor code.
+        \item Integrated camera motion capture system with flight controllers for indoor autonomous flight
+            using ROS
+    \end{compactitem}
+    \experiencespace
     
-    %\runsubsection{Research Engineer}
-    %\descript{\\Engineering and Scientific Innovations, Inc. \hfill Cincinnati, OH}
-    %\location{2014\textendash 2015}
-    %\begin{compactitem}
-%%        \item Overhauled proprietary fire suppressant delivery system resulting in a 70\% efficiency gain.
-        %\item Improved response time by 70\% of rapid fire suppression system by simplifying and optimizing
-            %computer vision routines with OpenCV
-%%            \subitem Simplified computer vision technique.
-%%            \subitem Implemented novel image queuing method.
-%%            \subitem Designed and fabricated custom circuit board for interfacing with a single board computer
-%%        \item Proposed and assisted in the implementation for a new method of flow introduction of powdered agent. 
-%%        \item Performed high\textendash speed cavity analysis of hydrodynamic ram events using custom code.
-        %\item Wrote custom utility using OpenCV to analyze cavity dynamics of hydrodynamic ram events
-        %\item Created custom programs to perform image velocimetry and droplet sizing on particle clouds
-%%            \subitem Bullet hole analysis
-%%            \subitem Particle image velocimetry
-    %\end{compactitem}
+    % \subsection{Engineering and Scientific Innovations, Inc. \hfill Cincinnati, OH}
+    % \descript{Research Engineer}
+    % \location{2014\textendash 2015}
+    % \begin{compactitem}
+    %     \item Overhauled proprietary fire suppressant delivery system resulting in a 70\% efficiency gain.
+    %     \item Improved response time by 70\% of rapid fire suppression system by simplifying and optimizing
+    %         computer vision routines with OpenCV
+    %         \subitem Simplified computer vision technique.
+    %         \subitem Implemented novel image queuing method.
+    %         \subitem Designed and fabricated custom circuit board for interfacing with a single board computer
+    %     \item Proposed and assisted in the implementation for a new method of flow introduction of powdered agent. 
+    %     \item Performed high\textendash speed cavity analysis of hydrodynamic ram events using custom code.
+    %     \item Wrote custom utility using OpenCV to analyze cavity dynamics of hydrodynamic ram events
+    %     \item Created custom programs to perform image velocimetry and droplet sizing on particle clouds
+    %         \subitem Bullet hole analysis
+    %         \subitem Particle image velocimetry
+    % \end{compactitem}
 \end{minipage} % The end of the right column
 
 %%------------------------------------------------
@@ -302,11 +312,11 @@ CMake \textbullet{} Docker/Podman
     \runsubsection{Master of Science \textemdash\ Aerospace Engineering} %, Expected Graduation: Aug 2017}
     \descript{\\University of Cincinnati}
     \location{2016\textendash 2018}
-    
-    %\begin{compactitem}
-        %\item ACCEND Master's Program - Advisor: Dr. Kelly Cohen
-                %\subitem Thesis: Genetic Fuzzy Systems for Coupled Dynamic Systems
-    %\end{compactitem}
+    {}
+    \begin{compactitem}
+        \item ACCEND Master's Program - Advisor: Dr. Kelly Cohen
+                \subitem Thesis: Genetic Fuzzy Systems for Coupled Dynamic Systems
+    \end{compactitem}
 
     \vspace{1em}
     \runsubsection{Bachelor of Science \textemdash\ Aerospace Engineering} %, Expected Graduation: Apr 2017}
@@ -324,6 +334,7 @@ CMake \textbullet{} Docker/Podman
     \vspace*{2ex}
     \section{Research}
     \runsubsection{University of Cincinnati \textemdash\ Thesis Research}
+    \descript{}
     \location{2015\textendash 2017}
     \begin{compactitem}
         \item Developed iterative simulation ability for the purpose of machine learning intelligent control.
@@ -339,29 +350,21 @@ CMake \textbullet{} Docker/Podman
     \end{compactitem}
     
     \vspace*{2ex}
-    \runsubsection{Asymmetric Inc./ University of Cincinnati \textemdash\ Advanced Red Team - Technical Support and Operations Analysis Demonstration}
-    \location{2016}
+    \runsubsection{AUVSI-SUAS Competition Member \textemdash\  Association for Unmanned Vehicle Systems International}
+    \descript{}
+    \location{2017}
     \begin{compactitem}
-        \item Delivered prototype on a demanding schedule due to a pressing deadline.
-        \item Interfaced multiple sensors and software packages to control exploration mission.
-        \item Integrated flight controller to on-board flight computer using\\Python and Robot Operating System (ROS).
-        \item Demonstrated prototype to a group of servicemen for use in dangerous environments.
-            %\subitem Received feedback for further development iterations.
-            %\subitem Currently making modifications to improve usability and reliability.
-    \end{compactitem}
-    
-    \vspace*{2ex}
-    \runsubsection{Autonomous Air Vehicle Competition Team Member \textemdash\  Air Force Research Labs Autonomous Air Vehicle Conference}
-    \location{2014\textendash 2015}
-    \begin{compactitem}
-        \item Competition challenge requirements included locating and imaging a target in an indoor,\\ GPS\textendash denied environment.
-        \item Developed software to integrate various hardware components to ease the exchange of sensor\\ data.
-        \item Software processes raw data streams from serial connections to useful information to be used\\ in the control and guidance of the air vehicle.
-        \item Current work includes developing improved computer vision algorithms and interpreting\\ encoded waypoint information.
+        \item Competition required submitting a technical design paper, flight readiness review, and mission
+            demonstration.
+        \item Placed 34\textsuperscript{th} out of 59 total teams as 1\textsuperscript{st} time competitors.
+        \item Led flight software and algorithm development, integrating high-level mission control with low-level
+            flight controller.
+        \item Developed mission-fidelity simulation to test mission performance.
     \end{compactitem}
     
     \vspace*{2ex}
     \runsubsection{Undergraduate Research \textemdash\ National Science Foundation}
+    \descript{}
     \location{2013}
     \begin{compactitem}
         \item Analyzed a benchmark structural stability problem to devise a control methodology\\  using fuzzy\textendash genetic systems.
@@ -372,6 +375,19 @@ CMake \textbullet{} Docker/Podman
         \item All work was done using \textsc{Matlab}.
     \end{compactitem}    
 
+    \vspace*{2ex}
+    \runsubsection{Asymmetric Inc./ University of Cincinnati \textemdash\ Advanced Red Team - Technical Support and Operations Analysis Demonstration}
+    \descript{}
+    \location{2016}
+    \begin{compactitem}
+        \item Delivered prototype on a demanding schedule due to a pressing deadline.
+        \item Interfaced multiple sensors and software packages to control exploration mission.
+        \item Integrated flight controller to on-board flight computer using\\Python and Robot Operating System (ROS).
+        \item Demonstrated prototype to a group of servicemen for use in dangerous environments.
+            %\subitem Received feedback for further development iterations.
+            %\subitem Currently making modifications to improve usability and reliability.
+    \end{compactitem}
+    
     \vspace*{3em}
     \section{Publications and Presentations}
     \begin{compactitem}

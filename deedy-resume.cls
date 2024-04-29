@@ -8,7 +8,7 @@
 \ProcessOptions\relax
 \LoadClass{article}
 
-\usepackage[hmargin=1.20cm, vmargin=0.6cm]{geometry} % Specifies horizontal and vertical page margins
+\usepackage[hmargin=0.8cm, vmargin=0.6cm]{geometry} % Specifies horizontal and vertical page margins
 
 \usepackage{hyperref} 
 
@@ -16,7 +16,7 @@
 %	COLORS
 %----------------------------------------------------------------------------------------
 
-\usepackage[usenames,dvipsnames]{xcolor} % Required for custom colors
+\usepackage[dvipsnames]{xcolor} % Required for custom colors
 
 \definecolor{headings}{HTML}{333333} % The color of the large sections
 \definecolor{subheadings}{HTML}{6A6A6A} % The color of subsections and places worked/studied

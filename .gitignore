@@ -24,5 +24,6 @@
 *.out
 *.synctex.gz
 *.pdf
+*.xdv
 
 tags
