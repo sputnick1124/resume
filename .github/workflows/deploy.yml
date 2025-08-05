@@ -15,11 +15,13 @@ jobs:
         with:
           latexmk_use_xelatex: true
           root_file: NickStocktonResume.tex
+      - name: Copy to output folder
+        run: cp NickStocktonResume.pdf public/
       - name: Upload artifact
         id: deployment
         uses: actions/upload-pages-artifact@v3
         with:
-          path: NickStocktonResume.pdf
+          path:  public/
   deploy:
     environment:
       name: github-pages
